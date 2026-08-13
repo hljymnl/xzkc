@@ -8,8 +8,9 @@ import asyncio, argparse, json, re, sys, os
 import edge_tts
 
 ROOT = "/Users/macbook/Documents/ChatGPT/小组平台"
-COURSE = os.path.join(ROOT, "data/courses/yaodao-rumen.json")
-AUDIO_DIR = os.path.join(ROOT, "public/audio/yaodao-rumen")
+SLUG = os.environ.get("COURSE_SLUG", "yaodao-rumen")
+COURSE = os.path.join(ROOT, "data/courses", SLUG + ".json")
+AUDIO_DIR = os.path.join(ROOT, "public/audio", SLUG)
 
 SENT_RE = re.compile(r'[^。！？]*[。！？]+[”’」』]?|[^。！？]+$')
 
@@ -32,9 +33,15 @@ def chunk_text(text, max_chars=120):
 async def gen_one(voice, text, out, sem):
     async with sem:
         os.makedirs(os.path.dirname(out), exist_ok=True)
-        tts = edge_tts.Communicate(text, voice, rate="-8%")
-        await tts.save(out)
-        return out
+        for attempt in range(4):
+            try:
+                tts = edge_tts.Communicate(text, voice, rate="-8%")
+                await tts.save(out)
+                return out
+            except Exception as e:
+                print(f"  retry {attempt+1}: {type(e).__name__} {len(text)}ch", flush=True)
+                await asyncio.sleep(2 + attempt * 3)
+        raise RuntimeError(f"failed after retries: {out}")
 
 async def gen_lesson(lesson, sem, args):
     num = lesson['number']
@@ -51,14 +58,17 @@ async def gen_lesson(lesson, sem, args):
         if sec['heading']:
             manifest['segments'].append({"type": "heading", "section": si, "text": sec['heading'], "audio": None})
         for chunk in chunk_text(sec['text']):
+            if len(chunk) < 3:  # 过短碎片无意义，跳过
+                continue
             out = os.path.join(ldir, f"sec-{si}-{seg_idx}.mp3")
-            manifest['segments'].append({"type": "text", "section": si, "text": chunk, "audio": f"/audio/yaodao-rumen/lesson-{num}/sec-{si}-{seg_idx}.mp3"})
-            tasks.append((gen_one(args.voice_content, chunk, out, sem), "seg", out))
+            manifest['segments'].append({"type": "text", "section": si, "text": chunk, "audio": f"/audio/{SLUG}/lesson-{num}/sec-{si}-{seg_idx}.mp3"})
+            if not os.path.exists(out):  # 断点续跑：已生成的跳过
+                tasks.append((gen_one(args.voice_content, chunk, out, sem), "seg", out))
             seg_idx += 1
     results = await asyncio.gather(*(t[0] for t in tasks))
     for (coro, kind, out), ok in zip(tasks, results):
         if kind == 'memory' and ok:
-            manifest['memoryAudio'] = f"/audio/yaodao-rumen/lesson-{num}/memory.mp3"
+            manifest['memoryAudio'] = f"/audio/{SLUG}/lesson-{num}/memory.mp3"
     return manifest
 
 async def main():
@@ -78,7 +88,7 @@ async def main():
             else:
                 sel.add(int(part))
         lessons = [l for l in lessons if l['number'] in sel]
-    sem = asyncio.Semaphore(4)
+    sem = asyncio.Semaphore(2)
     for l in lessons:
         man = await gen_lesson(l, sem, args)
         l['audio'] = man

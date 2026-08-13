@@ -1,9 +1,9 @@
 import Link from 'next/link';
-import { getCourse } from '@/lib/courses';
+import { getCourse, listCourses } from '@/lib/courses';
 import ProgressBar from '@/components/ProgressBar';
 
 export function generateStaticParams() {
-  return [{ slug: 'yaodao-rumen' }];
+  return listCourses().map((c) => ({ slug: c.id }));
 }
 
 export default async function CoursePage({ params }) {
