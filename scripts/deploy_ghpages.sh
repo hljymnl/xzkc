@@ -5,6 +5,10 @@ cd /Users/macbook/Documents/ChatGPT/小组平台
 rm -rf /tmp/gh-repo
 mkdir -p /tmp/gh-repo
 cp -R "out/." /tmp/gh-repo/
+# 修复首页 RSC 负载路径：index.txt -> {basePath}.txt
+if [ -f /tmp/gh-repo/index.txt ]; then
+  cp /tmp/gh-repo/index.txt /tmp/gh-repo/xiaozu-kecheng.txt
+fi
 cd /tmp/gh-repo
 git init -q -b gh-pages
 git add -A
