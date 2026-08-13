@@ -40,6 +40,17 @@ pnpm dev          # http://localhost:3000
 pnpm build        # 生产构建
 ```
 
+## 数据处理管线（按顺序执行）
+
+```bash
+python3 scripts/extract_yaodao.py            # 1. PDF → 结构化 JSON
+python3 scripts/add_answers.py               # 2. 合并人工答案（data/answers/yaodao-rumen.json）
+python3 scripts/convert_fill_to_choice.py    # 3. 填空题 → 选择题（选词填空，每空一题）
+cp data/courses/yaodao-rumen.json public/courses/   # 4. 同步到前端
+```
+
+> 已完成：39 道填空题已转换为 75 道选词填空选择题（答案+干扰选项见 `data/answers/yaodao-fill-choice.json`）。
+
 ## 扩展其他教材
 
 其他 5 份 PDF（丰盛的生命 / 圣经人物与你·旧约·新约 / 寻宝查经课 / 寻找确据）流程相同：

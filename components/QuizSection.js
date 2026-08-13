@@ -63,7 +63,9 @@ export default function QuizSection({ slug, lessonId, quiz }) {
               const isSubmitted = !!submitted[key];
               const gd = grade(g, gi, qi);
               const ref = refAnswer(g, qi);
-              const opts = g.type === 'choice' ? (g.options || ['对', '错']) : [];
+              const opts = g.type === 'choice'
+                ? (Array.isArray(g.options?.[0]) ? (g.options[qi] || []) : (g.options || ['对', '错']))
+                : [];
               return (
                 <div key={qi} className="card qcard">
                   <p className="qtext">{q}</p>
