@@ -1,0 +1,17 @@
+{
+  "name": "xiaozu-kecheng",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "extract": "python3 scripts/extract_yaodao.py",
+    "tts": "python3 scripts/tts_generate.py"
+  },
+  "dependencies": {
+    "next": "^15.3.3",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  }
+}

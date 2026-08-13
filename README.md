@@ -1,0 +1,54 @@
+# 小组互动课程平台
+
+成人小组互动查经课程：**音频播放（Edge 神经语音）+ 问答测验 + 进度打卡**，手机 / 电脑响应式（PWA，可添加到主屏幕离线使用）。
+
+## 当前进度
+
+- ✅ 试点课程：《要道入门》（希望之声·圣经函授学校）17 课全部上线
+  - 17 课正文解析为结构化内容（小节 + 存心节）
+  - 每课作业解析为考题：是非题 / 选择题 / 填充题 / 思考题
+  - **390 段 Edge 神经语音音频**（约 50MB）：正文=晓晓(女声)，存心节=云希(男声)
+  - 第 1 课附人工整理的答案（演示自动判分），其余课答案可逐步补充
+- ✅ 核心功能
+  - 音频播放器：后台播放、锁屏控制(Media Session)、倍速(0.75/1/1.25/1.5×)、断点续播、进度条拖动
+  - 文字同步：正文按段高亮，当前播放段落自动滚动
+  - 测验：自动判分（有答案时）+ 参考答案展示（提交后）
+  - 学习进度：本地存储，课程完成度、本课收听进度
+  - PWA：离线缓存课程数据与音频，可"添加到主屏幕"
+
+## 目录结构
+
+```
+app/                    Next.js 页面（首页 / 课程 / 单课播放器）
+components/             播放器 / 测验 / 进度条组件
+data/courses/           解析出的课程 JSON（含音频清单）
+data/answers/           人工整理的标准答案（逐步补充）
+public/audio/           edge-tts 生成的音频
+public/courses/         前端加载的课程 JSON 副本
+scripts/
+  pdf_reader.py         按坐标重建 PDF 阅读顺序（两栏）
+  extract_yaodao.py     要道入门 PDF → JSON
+  tts_generate.py       edge-tts 音频生成（--lessons 1-17）
+  add_answers.py        合并答案进课程 JSON
+```
+
+## 本地运行
+
+```bash
+pnpm install
+pnpm dev          # http://localhost:3000
+pnpm build        # 生产构建
+```
+
+## 扩展其他教材
+
+其他 5 份 PDF（丰盛的生命 / 圣经人物与你·旧约·新约 / 寻宝查经课 / 寻找确据）流程相同：
+
+1. `scripts/pdf_reader.py` 读取 PDF（自动分栏）
+2. 仿照 `extract_yaodao.py` 写抽取脚本（每份教材小标题清单需人工校对）
+3. `scripts/tts_generate.py` 生成音频
+4. 加入 `app/page.js` 的课程列表（`public/courses/<slug>.json`）
+
+## 截图
+
+见 `docs/screenshots/`（手机/电脑两种视口）。
