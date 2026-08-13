@@ -3,7 +3,7 @@ import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import QuizSection from './QuizSection';
 import { asset } from '@/lib/base';
-import { getCourseState, saveCourseState, getLessonPlayed, saveLessonPlayed } from '@/lib/store';
+import { getCourseState, saveCourseState, getLessonPlayed, saveLessonPlayed, getUserId, recordLessonDone, recordSegmentPlayed } from '@/lib/store';
 
 const SPEEDS = [1, 1.25, 1.5, 0.75];
 
@@ -43,6 +43,7 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
       saveCourseState(slug, s);
     }
     setDone(true);
+    recordLessonDone(getUserId(), slug, lessonId);
   }, [slug, lessonId]);
 
   const notePlayed = useCallback((idx) => {
@@ -50,6 +51,7 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
       if (prev.includes(idx)) return prev;
       const nextArr = [...prev, idx];
       saveLessonPlayed(slug, lessonId, nextArr);
+      recordSegmentPlayed(getUserId(), slug, lessonId, idx);
       return nextArr;
     });
   }, [slug, lessonId]);

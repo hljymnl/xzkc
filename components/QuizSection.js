@@ -1,6 +1,6 @@
 'use client';
 import { useEffect, useState } from 'react';
-import { getLessonQuiz, saveLessonQuiz } from '@/lib/store';
+import { getLessonQuiz, saveLessonQuiz, getUserId, recordQuizAnswered } from '@/lib/store';
 
 const TYPE_META = {
   fill: { title: '填空题', icon: '✍️', hint: '根据本课内容填写空白处' },
@@ -34,6 +34,8 @@ export default function QuizSection({ slug, lessonId, quiz }) {
       });
     });
     setSubmitted(nextSub);
+    const answered = Object.keys(nextSub).length;
+    if (answered) recordQuizAnswered(getUserId(), slug, lessonId, answered);
   };
 
   // 判分：choice 有答案时判对错；其余显示参考答案
