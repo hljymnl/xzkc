@@ -1,6 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  output: 'standalone',
+  output: 'export',
+  basePath: '/xiaozu-kecheng',
   images: { unoptimized: true },
 };
 export default nextConfig;

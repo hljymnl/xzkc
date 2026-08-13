@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import QuizSection from './QuizSection';
+import { asset } from '@/lib/base';
 import { getCourseState, saveCourseState, getLessonPlayed, saveLessonPlayed } from '@/lib/store';
 
 const SPEEDS = [1, 1.25, 1.5, 0.75];
@@ -60,11 +61,11 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
     setSegIdx(idx);
     notePlayed(idx);
     if (autoplay && audioRef.current) {
-      audioRef.current.src = seg.audio;
+      audioRef.current.src = asset(seg.audio);
       audioRef.current.play().catch(() => {});
       setPlaying(true);
     } else if (audioRef.current) {
-      audioRef.current.src = seg.audio;
+      audioRef.current.src = asset(seg.audio);
       audioRef.current.pause();
       setPlaying(false);
     }
@@ -206,7 +207,7 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
                 onClick={() => {
                   const a = audioRef.current;
                   if (a) {
-                    a.src = audioManifest.memoryAudio;
+                    a.src = asset(audioManifest.memoryAudio);
                     a.play().catch(() => {});
                     setPlaying(true);
                   }
