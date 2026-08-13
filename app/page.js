@@ -6,7 +6,7 @@ export default function Home() {
   return (
     <div className="container">
       <div className="page-head">
-        <h1>📖 小组互动课程</h1>
+        <h1>📖 互动课程</h1>
         <p>听音频学课程 · 做测验 · 一起成长</p>
       </div>
       {courses.map((c) => (
