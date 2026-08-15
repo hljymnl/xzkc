@@ -1,0 +1,93 @@
+1:"$Sreact.fragment"
+2:I[8573,[],""]
+3:I[457,[],""]
+4:I[6535,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+5:I[6863,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+7:I[5616,[],"OutletBoundary"]
+9:I[2729,[],"AsyncMetadataOutlet"]
+b:I[5616,[],"ViewportBoundary"]
+d:I[5616,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[8255,[],""]
+:HL["/xzkc/_next/static/css/1b7ff2dfb262e6af.css","style"]
+0:{"P":null,"b":"ktPVmYSFcj8T37CuiE8PN","p":"/xzkc","c":["","lesson","fuyin-22","lesson-1"],"i":false,"f":[[["",{"children":["lesson",{"children":[["slug","fuyin-22","d"],{"children":[["lessonId","lesson-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/xzkc/_next/static/css/1b7ff2dfb262e6af.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/xzkc/icons/icon-192.png"}],["$","link",null,{"rel":"apple-touch-icon","href":"/xzkc/icons/icon-192.png"}],["$","meta",null,{"name":"theme-color","content":"#2f6b5e"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]]}],{"children":["lesson",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","fuyin-22","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["lessonId","lesson-1","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[9561,["424","static/chunks/424-26d7038c52a95b75.js","441","static/chunks/app/lesson/%5Bslug%5D/%5BlessonId%5D/page-67e353bcb357bac5.js"],"default"]
+12:T1050,二十世纪科学发达﹐人能飞向太空﹐潜入深海﹐
+好像凡事都能行。因此许多人崇
+尚科学﹐同时却轻视宗教信仰。那
+到底什么是科学呢？科学只是通过观
+察和思考﹐研究和实验，去发现及证实自然
+界现存的规律﹐并对它们加以利用﹐使之能
+造福人类。科学以目前来看﹐不外乎有自然
+科学﹐社会科学和艺术科目这几方面。
+自然科学中不论是纯理论研究或应用
+科学, 目的都是想改善人的生活﹐增进人的
+健康寿命﹐和发展人的智能。而社会科学是
+要从论识社会﹐研究社会到谋求改造社会的
+角度去达到消除贫困落后﹐种族﹐性别﹐阶级
+等岐视﹐实现一个公正公义的大同世界。至
+于音乐﹐美术﹐诗歌﹐戏剧等明显是要丰富和
+美化人的生活。这些是科学家响往及知识
+所能带给人的最好结果。我们知道知识用
+在行善上固然是行善的力量﹐而用在作恶上
+又如何呢？答案同样是很明显的。科学导
+致的忧喜祸福至少取决于掌握和运用它的
+人。
+应该说现代人利用科学为自身解决了
+很多问题（当然同时也引发了一些新问题。）
+只是有两个“老大难”的问题﹐古今中外始
+终未能解决﹐那就是罪和死了。
+罪自古就有﹐但今天更空前泛滥﹐直接
+间接地威胁着人类的生存﹐并带来个人道德
+及身体的沦亡及社会的恐慌。另外古往今
+来人都极欲求生﹐但死却无人能逃脱。它们
+如影随形伴随着每一个人。这些是不争的
+事实。科学家和常人都一样要面对它们。
+有时科学家﹐有识之士甚至更敏锐地感受到
+罪和死的危害及痛苦呢！
+在人没有办法的事上﹐创造主上帝为人
+预备了解救的办法。“上帝爱世人﹐甚至将
+他的独生子赐给他们﹐叫一切信他的﹐不至
+灭亡﹐反得永生。”上帝之所以做出这样的
+牺牲只是出于爱, 因为人类是他的儿女﹐是
+按他的形像造的, 那怕他们已犯罪堕落﹐他
+仍然挂念及爱护他们。
+你若能理解一个慈母愿为儿女舍身﹐一
+位爱侣肯为自己钟情的人捐躯﹐你多少可能
+了解一点上帝的心意。但难以理解的是上
+帝让圣子基督耶稣舍命在十字架上﹐不是救
+爱他的儿女或友人﹐竟然是拯救悖逆他的浪
+子及仇敌。美国内战期间有人触犯刑法被
+判处死刑﹐就在行刑前﹐华盛顿大将军的面
+前出现一个求情者﹐他本是总统的挚友﹐他
+情词迫切的苦苦哀求华盛顿宽赦这死囚。
+华盛顿就说你远道前来就是为你的朋友求
+情么？谁知所得的回答竟是﹕他不是
+我的友人﹐而是一直恨我害我的敌人。是的﹐常人不容易理解这种神圣的爱。但这却是事实。问题是你信不信﹐相信的话﹐耶稣牺牲的果效就能成就在你身上。他要为你成就
+科学所不能成就的事。为你解决
+两大相关的“绝症”——就是罪和
+死。
+当你认罪时﹐他赦免你的罪﹐赐你内在
+的平安；当你与罪奋争时﹐他赐你力量做得
+胜的人；当你人生迷失方向时﹐他呼召你跟
+从他的脚踪﹐效法他的榜样；因为他已经在
+十字架上担负我们的罪责﹐并以他的死换回
+我们的生﹐这样就让我们在他所赐的永生的
+应许中生活﹐也就是让我们将短暂的今生和
+永恒的将来联在一起﹐在信心﹐盼望﹐和爱中
+生活。
+科学可以利用现存的自然资源和规律
+给许多人（但不是所有的人）带来衣食住
+行的方便﹐然而既带不来平安、喜乐和爱﹐
+也带不走忧虑﹐烦恼﹐罪恶和死亡﹐更不能给
+予永远的生命﹐丰富有意义的生命。这样看
+来﹐上帝为人预备的出死入生的救恩计划才
+是真正的“科学中的科学”值得我们响往﹐
+学习﹐和接受啊! 耶稣说:「我来是叫人得
+生命, 并且得的更丰盛。」( 约10:10)
+你若有兴趣对圣经和信仰作进一部的探讨﹐请写信:
+香港邮政总局信箱310 号望潮 收联系人：电话：电邮：地址：6:["$","$L11",null,{"course":{"id":"fuyin-22","title":"科学中的科学","subtitle":"福音单张 · 第22张","source":"福音单张","totalLessons":1,"category":"福音","lessons":[{"number":1,"id":"lesson-1","title":"科学中的科学","goal":null,"extra":null,"memoryVerse":null,"sections":[{"heading":"","text":"$12"}],"discussion":[],"quiz":[{"label":"阅读理解·选择题","type":"choice","questions":["（　　）科学发达﹐人能飞向太空﹐潜入深海﹐好像凡事都能行。","因此许多人崇尚科学﹐同时却轻视（　　）。","那到底什么是（　　）呢？","科学只是通过观察和思考﹐研究和实验，去发现及证实自然界现存的规律﹐并对它们加以利用﹐使之能（　　）。","科学以目前来看﹐不外乎有自然科学﹐（　　）和艺术科目这几方面。","自然科学中不论是（　　）研究或应用科学,目的都是想改善人的生活﹐增进人的健康寿命﹐和发展人的智能。","而（　　）是要从论识社会﹐研究社会到谋求改造社会的角度去达到消除贫困落后﹐种族﹐性别﹐阶级等岐视﹐实现一个公正公义的大同世界。","这些是（　　）响往及知识所能带给人的最好结果。","我们知道知识用在行善上固然是行善的（　　）﹐而用在作恶上又如何呢？","（　　）导致的忧喜祸福至少取决于掌握和运用它的人。"],"options":[["证实","凡事","二十世纪","自然界"],["凡事","宗教信仰","证实","自然界"],["科学","自然界","证实","凡事"],["证实","凡事","造福人类","自然界"],["自然界","社会科学","凡事","证实"],["凡事","纯理论","证实","自然界"],["凡事","社会科学","证实","自然界"],["科学家","自然界","证实","凡事"],["力量","自然界","凡事","证实"],["自然界","凡事","证实","科学"]],"answers":["二十世纪","宗教信仰","科学","造福人类","社会科学","纯理论","社会科学","科学家","力量","科学"]}],"audio":{}}]},"lesson":"$6:props:course:lessons:0","prev":null,"next":null}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#2f6b5e"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"小组互动课程"}],["$","meta","1",{"name":"description","content":"成人小组互动查经课程 · 音频播放 · 问答测试"}],["$","link","2",{"rel":"manifest","href":"/xzkc/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","4",{"name":"apple-mobile-web-app-title","content":"小组课程"}],["$","meta","5",{"name":"apple-mobile-web-app-status-bar-style","content":"default"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

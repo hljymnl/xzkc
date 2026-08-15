@@ -1,0 +1,96 @@
+1:"$Sreact.fragment"
+2:I[8573,[],""]
+3:I[457,[],""]
+4:I[6535,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+5:I[6863,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+7:I[5616,[],"OutletBoundary"]
+9:I[2729,[],"AsyncMetadataOutlet"]
+b:I[5616,[],"ViewportBoundary"]
+d:I[5616,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[8255,[],""]
+:HL["/xzkc/_next/static/css/1b7ff2dfb262e6af.css","style"]
+0:{"P":null,"b":"ktPVmYSFcj8T37CuiE8PN","p":"/xzkc","c":["","lesson","fuyin-23","lesson-1"],"i":false,"f":[[["",{"children":["lesson",{"children":[["slug","fuyin-23","d"],{"children":[["lessonId","lesson-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/xzkc/_next/static/css/1b7ff2dfb262e6af.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/xzkc/icons/icon-192.png"}],["$","link",null,{"rel":"apple-touch-icon","href":"/xzkc/icons/icon-192.png"}],["$","meta",null,{"name":"theme-color","content":"#2f6b5e"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]]}],{"children":["lesson",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","fuyin-23","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["lessonId","lesson-1","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[9561,["424","static/chunks/424-26d7038c52a95b75.js","441","static/chunks/app/lesson/%5Bslug%5D/%5BlessonId%5D/page-67e353bcb357bac5.js"],"default"]
+12:T10f3,法国著名作家莫泊桑写过一个短篇小说, 名为「项链」。其中
+讲到一名小官吏的太太, 意外地被邀请去
+参赴一位高官的盛宴及晚会。她在受宠
+若惊之余, 坐在梳妆台前凝视自己娇美的
+脸容, 不觉露出一丝的矜傲, 但转头一瞥
+见自己寒酸的服饰及穿戴, 不禁心就凉了
+半截, 难道能让自己在一班达官贵人及珠
+光宝气的妇人中间出丑, 还是索性不去?
+「有了! 有了!」 她眼睛一亮, 似乎已想
+出了一个两全其美的解决办法来了。
+次日, 晚上她又端坐在梳妆台前, 抚
+弄着刚从友人处借回光芒闪烁的珠宝项
+链, 轻轻地将它戴 在自己如花似玉的脖
+子上, 一时好不欢愉万状。
+盼候的日子到了,妇人盛装打扮完后,
+就催着夫婿登上了雇用的马车赴宴。在
+晚会上舞池中, 妇人笑貌频频又不断顾影
+自盼并为获邀与一贵族共舞而不胜欣喜,
+难忘的一夜啊! 精疲力竭乘兴、夜归寒
+舍, 及至卸装时, 妇人脸色突然转白,「啊!
+项链, 宝石项链在那里?」尽管反复的翻
+找并乘月色沿归途仔细寻觅终不可得。
+为不被友人误会及诟骂, 她决定变卖一切
+稍为值钱的东西, 又举债去购得一串最近
+似的珠宝项链归还给友人, 友人却漫不经
+心的随手将它放回一个大首饰盒中。
+从那过后, 妇人搬离故居, 远避他乡,
+为积钱偿还债务而起早摸黑, 帮人做佣
+工。几年过去了, 容颜尽损, 肤肌粗糙,
+衣衫更为简陋。一次路间巧遇从前友人,
+友人初看之下几乎失声不敢相识, 彼此惊
+愕之余, 细道往事, 妇人道出自己苦衷及
+加速苍老之原因, 谁知她的友人听吧, 竟
+脱口而出道:「哎! 为何不早对我说呢!
+其实, 我借你的项链, 只是一串人工的借
+珠宝啊!」迟了,虚荣已夺走了妇人的岁月,平安和健康!
+如果说虚荣单是妇女固有的弱点那就
+有些不公平了, 男的就没有吗? 今天, 很
+多人讲摆场面, 买名牌, 比家财, 夸耀身
+世, 沽名钓誉, 今天又有多少男女就因为
+虚荣作祟非但使自己的内心忐忑不安, 生
+活浮躁, 而且贻害了家庭, 甚至危及社会,
+所以圣经教导人「不要贪图虚浮的荣耀」
+而「要以基督耶稣的心为心」, 耶稣在世
+时说:「我不求人的荣耀」由小到大,
+从生到死就是真诚、简朴, 却充满内在的
+光华和荣耀。
+降生时, 天使告诉野地的牧羊人,去寻找
+的记号是「包着布卧在马槽里」多么简单朴实无华。上帝安排长大在穷
+乡僻壤以色列北部的小镇拿撒勒, 又让
+出生于一个劳动人民, 木匠约瑟的家中。
+当主耶稣卅岁时外出传道, 有一个知识分子要跟从,开宗明义坦率的说:「狐
+狸有洞, 天空的飞鸟有窝, 人子连枕头的地方也没有」在为人赎罪而赴刑时, 兵丁抽签瓜分
+所有的衣物, 一件里衣, 一
+件外衣, 真所谓「两袖清风」而埋葬的坟墓也是暗中跟随
+的一个门徒所提供的。圣经说:「本是富足, 却为我们成为贫穷,叫我们因着
+的贫穷,可以成为富足。」
+耶稣基督本是上帝的儿子, 但为使我们能接近,的神性披上了人性「道成
+肉身, 住在我们中间充充满满有恩典, 有真理, 我们也见过的荣光, 正是父独生
+子的荣光」
+旧约预表基督的圣所最外层是不起眼
+粗砺的海狗皮, 但从外院进入圣所, 再由
+圣所进入至圣所, 就尽是光芒四射, 金碧
+辉煌了。主耶稣不是花被罩鸡笼,是外
+表无华的璞玉, 人类心灵中举世无双的珍
+宝。
+你我愿意追求那些泡影般尘世的虚华
+而放弃永恒的价值呢? 还是寻求那位谦柔,
+真实的救主耶稣做你一生的良师益友, 而
+不贪求虚浮的荣耀, 眼前的利益, 转瞬即
+逝的欢乐呢? 多少人生因循生老病死的规
+律至终发现「竹篮打水一场空」但古今多
+少主的儿女在行走尘世的人生旅途中, 让
+基督成为他心中荣耀的盼望和人生路上的
+生命之光。今天选择是自由的, 但选择的
+结果, 日后就由不得你自己了, 快作一聪明的抉择吧!
+你若有兴趣对圣经和信仰作进一部的探讨﹐请写信:
+香港邮政总局信箱310 号 望潮收联系人：电话：电邮：地址：6:["$","$L11",null,{"course":{"id":"fuyin-23","title":"竹篮打水一场空","subtitle":"福音单张 · 第23张","source":"福音单张","totalLessons":1,"category":"福音","lessons":[{"number":1,"id":"lesson-1","title":"竹篮打水一场空","goal":null,"extra":null,"memoryVerse":null,"sections":[{"heading":"","text":"$12"}],"discussion":[],"quiz":[{"label":"阅读理解·选择题","type":"choice","questions":["法国著名作家莫泊桑写过一个短篇小说,名为「（　　）」。","其中讲到一名小官吏的太太,意外地被邀请去参赴一位高官的盛宴及（　　）。","次日,晚上她又端坐在（　　）前,抚弄着刚从友人处借回光芒闪烁的珠宝项链,轻轻地将它戴在自己如花似玉的脖子上,一时好不欢愉万状。","盼候的日子到了,（　　）盛装打扮完后,就催着夫婿登上了雇用的马车赴宴。","为不被友人误会及诟骂,她决定变卖一切稍为值钱的东西,又举债去购得一串最近似的珠宝项链归还给友人,友人却漫不经心的随手将它放回一个大（　　）中。","从那过后,妇人搬离故居,远避他乡,为积钱（　　）而起早摸黑,帮人做佣工。","降生时,天使告诉野地的牧羊人,去寻找的记号是「（　　）」多么简单朴实无华。","上帝安排长大在穷乡僻壤（　　）北部的小镇拿撒勒,又让出生于一个劳动人民,木匠约瑟的家中。","（　　）不是花被罩鸡笼,是外表无华的璞玉,人类心灵中举世无双的珍宝。"],"options":[["荣耀","官吏","项链","知识分子"],["晚会","官吏","荣耀","知识分子"],["荣耀","梳妆台","知识分子","官吏"],["妇人","知识分子","荣耀","官吏"],["荣耀","官吏","知识分子","首饰盒"],["荣耀","官吏","知识分子","偿还债务"],["包着布卧在马槽里","荣耀","官吏","知识分子"],["知识分子","荣耀","官吏","以色列"],["主耶稣","知识分子","官吏","荣耀"]],"answers":["项链","晚会","梳妆台","妇人","首饰盒","偿还债务","包着布卧在马槽里","以色列","主耶稣"]},{"label":"阅读理解·选择题","type":"choice","questions":["法国著名作家莫泊桑写过一个短篇小说,名为「（　　）」。"],"options":[["人生","尘世","项链","荣耀"]],"answers":["项链"]}],"audio":{}}]},"lesson":"$6:props:course:lessons:0","prev":null,"next":null}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#2f6b5e"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"小组互动课程"}],["$","meta","1",{"name":"description","content":"成人小组互动查经课程 · 音频播放 · 问答测试"}],["$","link","2",{"rel":"manifest","href":"/xzkc/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","4",{"name":"apple-mobile-web-app-title","content":"小组课程"}],["$","meta","5",{"name":"apple-mobile-web-app-status-bar-style","content":"default"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

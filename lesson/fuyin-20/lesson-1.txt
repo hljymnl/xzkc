@@ -1,0 +1,100 @@
+1:"$Sreact.fragment"
+2:I[8573,[],""]
+3:I[457,[],""]
+4:I[6535,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+5:I[6863,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+7:I[5616,[],"OutletBoundary"]
+9:I[2729,[],"AsyncMetadataOutlet"]
+b:I[5616,[],"ViewportBoundary"]
+d:I[5616,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[8255,[],""]
+:HL["/xzkc/_next/static/css/1b7ff2dfb262e6af.css","style"]
+0:{"P":null,"b":"ktPVmYSFcj8T37CuiE8PN","p":"/xzkc","c":["","lesson","fuyin-20","lesson-1"],"i":false,"f":[[["",{"children":["lesson",{"children":[["slug","fuyin-20","d"],{"children":[["lessonId","lesson-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/xzkc/_next/static/css/1b7ff2dfb262e6af.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/xzkc/icons/icon-192.png"}],["$","link",null,{"rel":"apple-touch-icon","href":"/xzkc/icons/icon-192.png"}],["$","meta",null,{"name":"theme-color","content":"#2f6b5e"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]]}],{"children":["lesson",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","fuyin-20","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["lessonId","lesson-1","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[9561,["424","static/chunks/424-26d7038c52a95b75.js","441","static/chunks/app/lesson/%5Bslug%5D/%5BlessonId%5D/page-67e353bcb357bac5.js"],"default"]
+12:T116f,像大科学家牛顿的名字在西方已作为
+智慧的同意语，在中东所罗门的名字也代
+表了聪明人。所罗门是古以色列的大君，
+素以聪慧出众为人称道。一天他的朋友在
+他的大厅置放了一大盆鲜花，又在它旁边
+放了一幅名画，所画的鲜花栩栩如生，真
+可以假乱真。他邀请了所罗门王来，为的
+是要考考他的智慧聪明，看看是否真如人
+们所说的那样卓越。他请所罗门坐得远远
+的, 然后开口道：请告诉我那一盆花是真
+的。从猜中的可能性来讲只有50 ﹪。万一
+说错了，国君的名声受损，可非同小可。
+但见所罗门神情泰然，只是吩付仆人将窗
+打开，稍待片刻只见蜜蜂和蝴蝶相继飞来，
+停落在那盆真花上。他的朋友暗中叫绝。
+这样看来有没有生命是判断真假的一个试
+金石。
+另外, 在圣经列王记上3:16-28 也记
+载了一件事。两个同房间住的妓女，先后
+各生了一个孩子。一天晚上，其中之一不
+小心将自己的孩子压死在床上，天快亮时
+被她发现，她就偷偷的将活孩子抱来，把
+死孩子换给另一个妇人，自以为得计。可
+是清早事发，两人从争论到告官，最后竞
+来到所罗门王面前。两人各自申诉，相持
+不下，一时似乎真假难分。所罗门沉思了
+片刻，就下令手下将活孩子当众一劈两
+半，各取一份。此时只见其中一个妇女大
+声嚷道：请王手下留情，我愿放弃，请将
+这孩子给她吧！说完就伏在婴孩身上放声
+痛哭, 而另一个则坚持要按王的判决去执
+行。到此真假母亲当然不难分明。只要不
+受假像的迷惑，也不以外貌待人，但注意
+有没有真情实爱的证据，尤其在考验之下,
+它将助人判断是非曲直，真假黑白。
+将近三千年后，另一位“一切智慧和
+知识”都积聚在他里面的主耶稣来到世上，
+他说：“当审判的时候，南方的女王要起
+来定这世代的罪；因为她从地极而来，要
+听所罗门智慧的话。看啊！，在这里有一
+个人比所罗门更大。”( 路11:31) 耶稣基
+督原是智慧之泉源，是万王之王。
+耶稣基督已经来“传好信息给谦卑的
+人”并“受差遣医好伤心的人，报告被掳
+的得释放，被囚的出监牢，报告耶和华的
+恩年，和我们上帝报仇的日子，安慰一切
+伤心的人”耶稣来到人间并不坐世上的宝
+座，他只愿作人心灵的王。他不用武力强
+权去统治，只以舍已的爱为旗帜。他不单
+是人肉体痛苦的同情及拯救者，他更是人
+心灵捆锁的释放者。他说“我就是道路，
+真理，生命，若不借着我，就没有人能到
+父那里去”（约14:6）因为“上帝使他成
+为我们的智慧、公义、圣洁、救赎。”（林
+前1:30）他虽为救我们而死在十字架上，
+但他复活了，他更说过：“我若从地上被
+举起来，就要吸引万人来归我”
+上帝不以我们的外貌，罪恶的过去，
+和败坏的现状来看待我们，今天我们又怎
+样去看待他呢？耶稣是真神，真诚的救主，
+你真正的朋友吗？还是像有些人所说，他
+只是一个生在两千年前的犹太人，反叛罗
+马失败而判刑的死囚，或者最多是一个好
+人，教育家，新宗教的建立者……呢?
+你可以考察，可以享有充分的选择的
+自由, 只是要记得有没有生命，生命力的
+表现，及有没有真情实爱，尢其在考验之时，
+才是鉴定真假是非，黑白曲直的无误标准
+及绝佳试金石。所罗门在判断时所显示的
+智慧，秘诀就在此。
+朋友！你若能不以世俗的眼光来看耶
+稣，却因他伟大的人生和那改变了无数人
+生命的生命，尤其在十字架上所显示的大
+爱而相信他，接受他，你就比所罗门更有
+智慧了！更可避免落入将来的审判之下，
+因为耶稣曾亲口说：“上帝差他的儿子降
+世，不是要定世人的罪，乃是要叫世人因
+他得救。信他的人，不被定罪，不信的人，
+罪已经定了，因为他不信上帝独生子的名”（约3:17-18）
+你若有兴趣对圣经和信仰作进一部的探讨﹐请写信:
+香港邮政总局信箱310 号 望潮收联系人：电话：电邮：地址：
+敬畏耶和华是知识的开端；愚妄人藐视智慧和训诲。—— 箴言1 章7 节6:["$","$L11",null,{"course":{"id":"fuyin-20","title":"所罗门的智慧","subtitle":"福音单张 · 第20张","source":"福音单张","totalLessons":1,"category":"福音","lessons":[{"number":1,"id":"lesson-1","title":"所罗门的智慧","goal":null,"extra":null,"memoryVerse":null,"sections":[{"heading":"","text":"$12"}],"discussion":[],"quiz":[{"label":"阅读理解·选择题","type":"choice","questions":["像大科学家牛顿的名字在西方已作为智慧的同意语，在中东（　　）的名字也代表了聪明人。","（　　）是古以色列的大君，素以聪慧出众为人称道。","一天他的（　　）在他的大厅置放了一大盆鲜花，又在它旁边放了一幅名画，所画的鲜花栩栩如生，真可以假乱真。","他邀请了（　　）王来，为的是要考考他的智慧聪明，看看是否真如人们所说的那样卓越。","他请（　　）坐得远远的,然后开口道：请告诉我那一盆花是真的。","从猜中的（　　）来讲只有50﹪。","但见（　　）神情泰然，只是吩付仆人将窗打开，稍待片刻只见蜜蜂和蝴蝶相继飞来，停落在那盆真花上。","这样看来有没有生命是判断真假的一个（　　）。","两个同房间住的妓女，先后各生了一个（　　）。","一天晚上，其中之一不小心将自己的（　　）压死在床上，天快亮时被她发现，她就偷偷的将活孩子抱来，把死孩子换给另一个妇人，自以为得计。"],"options":[["智慧","所罗门","可能性","伤心"],["智慧","伤心","可能性","所罗门"],["伤心","可能性","朋友","智慧"],["伤心","可能性","所罗门","智慧"],["伤心","智慧","可能性","所罗门"],["伤心","代表","可能性","智慧"],["智慧","伤心","可能性","所罗门"],["伤心","可能性","智慧","试金石"],["伤心","智慧","孩子","可能性"],["可能性","伤心","孩子","智慧"]],"answers":["所罗门","所罗门","朋友","所罗门","所罗门","可能性","所罗门","试金石","孩子","孩子"]}],"audio":{}}]},"lesson":"$6:props:course:lessons:0","prev":null,"next":null}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#2f6b5e"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"小组互动课程"}],["$","meta","1",{"name":"description","content":"成人小组互动查经课程 · 音频播放 · 问答测试"}],["$","link","2",{"rel":"manifest","href":"/xzkc/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","4",{"name":"apple-mobile-web-app-title","content":"小组课程"}],["$","meta","5",{"name":"apple-mobile-web-app-status-bar-style","content":"default"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

@@ -1,0 +1,116 @@
+1:"$Sreact.fragment"
+2:I[8573,[],""]
+3:I[457,[],""]
+4:I[6535,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+5:I[6863,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+7:I[5616,[],"OutletBoundary"]
+9:I[2729,[],"AsyncMetadataOutlet"]
+b:I[5616,[],"ViewportBoundary"]
+d:I[5616,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[8255,[],""]
+:HL["/xzkc/_next/static/css/1b7ff2dfb262e6af.css","style"]
+0:{"P":null,"b":"ktPVmYSFcj8T37CuiE8PN","p":"/xzkc","c":["","lesson","fuyin-24","lesson-1"],"i":false,"f":[[["",{"children":["lesson",{"children":[["slug","fuyin-24","d"],{"children":[["lessonId","lesson-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/xzkc/_next/static/css/1b7ff2dfb262e6af.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/xzkc/icons/icon-192.png"}],["$","link",null,{"rel":"apple-touch-icon","href":"/xzkc/icons/icon-192.png"}],["$","meta",null,{"name":"theme-color","content":"#2f6b5e"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]]}],{"children":["lesson",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","fuyin-24","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["lessonId","lesson-1","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[9561,["424","static/chunks/424-26d7038c52a95b75.js","441","static/chunks/app/lesson/%5Bslug%5D/%5BlessonId%5D/page-67e353bcb357bac5.js"],"default"]
+12:T14dd,从两个中国字谈起
+中国是个历史悠久的文明古国，这是
+许多人都认识到的。而对成千逾万个常用
+的中文字中的两个反义字—“罪”和“義”，
+一般人会认为它们很抽象，至于想追寻它
+们真正含义的人，又感到很深奥( 尽管它
+们的表现和相关的事物无处不在)，就因
+这样使许多人退避三舍，不敢不愿讨论它
+们了。现在就让我们来简单探讨一下。
+“罪”在字典中的介释是犯禁、违
+法。而儒家更具体教导人“非礼莫行、非
+礼莫言、非礼莫视、非礼莫听”，所谓四
+个“非”就组成罪。且不说这里的“礼”
+有它特定的社会内涵和历史背景，也不
+讲它的缺陷。它是论到消极的一面—“莫
+“莫”﹐“非”“非”……，没有深入融
+及心灵层面的要求。“言为心声”，那心
+思意念岂不是人们的言行根源么？查考基督教的圣经，罪的定义是：
+一.“违背律法就是罪”。( 约壹3:4)
+至于什么律法呢？就是上帝为人类
+设立的道德律，也是不少人曾听过的“十
+诫”( 出20:1-17)。前四条是对上帝的信守，
+后六条是对人的准则，既有消极的“禁止”、
+“不可”。但也有积极的“应当”。
+第一条是确立敬拜的对象。第二条是
+敬拜的方式—不可以偶像崇拜的方式，来
+崇拜我们独一的真神。第三条是敬拜上帝
+的态度—不可妄称上帝的名。第四条是敬
+拜上帝特定的日子—当记念安息日﹐守为
+圣安息日( 星期六)。其它六条是：当孝敬
+父母、不可杀人、不可奸淫、不可偷盗、
+不可作假见证陷害人、最后一条归纳为不
+可贪心。贪财好色、争高位、都是罪，而
+且不单是违犯律法的字面算是罪，违背律
+法的本意也是罪。罪都是源自于心，如恨
+人就是杀人，意淫也是违犯第七绦诫命。
+任何人违犯这以爱上帝爱人的精神实质为
+总纲的律法都是罪。
+二. 圣经又说： “人若知道行
+善却不去行，这就是他的罪了”。( 雅4:17)
+它是从积极方面来要求了：如“见死
+不救就等于杀人，”人非但不可作假见证，
+如果不为真理，真实的情况作见证也就是
+罪等等。
+三. 圣经又提到 “凡不出于信
+心的就是罪”。( 罗14:23)
+不信创造主上帝，不信救赎主基督，
+不信从圣经的真理，对别人毫无信心、信
+任、信实的话，这也是罪。这样来看，我
+们如果诚实的剖析自己，我们必会承认自
+己在上帝面前，在人面前都是一个有罪的
+人。
+有罪怎么办？世界上有一等人索性不
+管，继续放任、放纵，带着内疚及罪迹斑
+斑的身心进入死亡和坟墓。另一等人却想
+对付及解决自己身上的恶行和心中的罪疚
+感并想做好人及有清白的良心﹐于是就想
+出各种人为的方法，什么吃斋、念佛、修
+桥补路、朝圣、修行，捐输﹐起誓不一而
+足。但人类的共同的经验正如古代一位保
+罗所表达的，有时：“我所做的，我自己
+不明白；我所愿意的，我并不做，我所恨
+恶的，我倒去做”， “我也知道在我里头，
+就是在我肉体之中，没有良善。因为立志
+为善由得我，只是行出来由不得我，故此
+我所愿意的善我反不做，我所不愿意的恶联系人：电话：电邮：地址：
+我倒去做”在这种内心挣扎的光景中，一
+个对罪觉醒的他，自己必深觉无力，就如
+保罗喊道:“我真是苦阿！谁能救我脱离
+这取死的身体呢！”可幸，保罗的表白并
+未结束在这里，紧接着他说，感谢上帝，
+靠着我们的主耶稣基督就能脱离了。
+那又怎么靠着基督来脱离呢？如何成
+为一个義人呢?( 罗7:15-25) 中文的“義”
+字给了我们一个正确而简洁的答案。“義”
+是由“羊”和“我”两个字组成。就如圣
+经清楚告诉我们的，耶稣基督是“上帝的
+羔羊，除去( 背负) 世人罪孽的”( 约1:29)而且早在来到世界之前就预言到“我们
+都如羊走迷；各人偏行己路，耶和华使我们众人的罪孽都归在身上…”“为我
+们的过犯受害, 为我们的罪孽压伤，因受的刑罚我们得平安，因受的鞭伤我们
+得医治。”( 赛53:6﹐5)
+耶稣基督按预言早在近二千年前已生
+到世上来，( 并成为我们罪人的替罪羊)，
+被恶人钉死在十字架上，为我们成全了
+救法。就如中国字，“義”，所告诉我们
+的，只要我们相信，接受上帝的羔羊—耶
+稣为我们的救主，来到他的面前认罪，来到十字架下仰望，并和联合，我们就
+非但得到赦罪的平安，而且会在上帝的眼中被看作是义人，并从得着行义为善的
+力量！
+你如果愿意摆脱罪的权势和危害，你
+如果响往成为義人并有力量遵行上帝爱的
+律法，及行各样与人有益的善事，你就从
+中文“罪” 和，“義” 两个字及圣经的
+教导和应许中得到启发而来相信接受主耶
+稣为你救主，认罪，悔改及享有一个新的
+生命，度一种新的生活吧！
+你若有兴趣对圣经和信仰作进一部的探讨﹐请写信:
+香港邮政总局信箱310 号 望潮收6:["$","$L11",null,{"course":{"id":"fuyin-24","title":"罪与义","subtitle":"福音单张 · 第24张","source":"福音单张","totalLessons":1,"category":"福音","lessons":[{"number":1,"id":"lesson-1","title":"罪与义","goal":null,"extra":null,"memoryVerse":null,"sections":[{"heading":"","text":"$12"}],"discussion":[],"quiz":[{"label":"阅读理解·选择题","type":"choice","questions":["从两个中国字谈起中国是个历史悠久的（　　），这是许多人都认识到的。","“罪”在（　　）中的介释是犯禁、违法。","而儒家更具体教导人“非礼莫行、非礼莫言、非礼莫视、非礼莫听”，所谓（　　）“非”就组成罪。","且不说这里的“礼”有它特定的社会内涵和（　　），也不讲它的缺陷。","它是论到消极的一面—“（　　）”﹐“非”“非”……，没有深入融及心灵层面的要求。","“（　　）”，那心思意念岂不是人们的言行根源么？","查考基督教的圣经，罪的定义是：一.“（　　）”。","前（　　）是对上帝的信守，后六条是对人的准则，既有消极的“禁止”、“不可”。","但也有积极的“（　　）”。","第（　　）是确立敬拜的对象。"],"options":[["文明古国","消极","中国","感谢上帝"],["字典","中国","感谢上帝","消极"],["一位","四个","六条","三条"],["感谢上帝","中国","消极","历史背景"],["消极","感谢上帝","中国","莫“莫"],["中国","消极","感谢上帝","言为心声"],["感谢上帝","违背律法就是罪","中国","消极"],["三条","四条","四个","一位"],["应当","中国","消极","感谢上帝"],["一位","四个","三条","一条"]],"answers":["文明古国","字典","四个","历史背景","莫“莫","言为心声","违背律法就是罪","四条","应当","一条"]}],"audio":{}}]},"lesson":"$6:props:course:lessons:0","prev":null,"next":null}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#2f6b5e"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"小组互动课程"}],["$","meta","1",{"name":"description","content":"成人小组互动查经课程 · 音频播放 · 问答测试"}],["$","link","2",{"rel":"manifest","href":"/xzkc/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","4",{"name":"apple-mobile-web-app-title","content":"小组课程"}],["$","meta","5",{"name":"apple-mobile-web-app-status-bar-style","content":"default"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

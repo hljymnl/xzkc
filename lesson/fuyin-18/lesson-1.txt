@@ -1,0 +1,119 @@
+1:"$Sreact.fragment"
+2:I[8573,[],""]
+3:I[457,[],""]
+4:I[6535,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+5:I[6863,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+7:I[5616,[],"OutletBoundary"]
+9:I[2729,[],"AsyncMetadataOutlet"]
+b:I[5616,[],"ViewportBoundary"]
+d:I[5616,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[8255,[],""]
+:HL["/xzkc/_next/static/css/1b7ff2dfb262e6af.css","style"]
+0:{"P":null,"b":"ktPVmYSFcj8T37CuiE8PN","p":"/xzkc","c":["","lesson","fuyin-18","lesson-1"],"i":false,"f":[[["",{"children":["lesson",{"children":[["slug","fuyin-18","d"],{"children":[["lessonId","lesson-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/xzkc/_next/static/css/1b7ff2dfb262e6af.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/xzkc/icons/icon-192.png"}],["$","link",null,{"rel":"apple-touch-icon","href":"/xzkc/icons/icon-192.png"}],["$","meta",null,{"name":"theme-color","content":"#2f6b5e"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]]}],{"children":["lesson",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","fuyin-18","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["lessonId","lesson-1","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[9561,["424","static/chunks/424-26d7038c52a95b75.js","441","static/chunks/app/lesson/%5Bslug%5D/%5BlessonId%5D/page-67e353bcb357bac5.js"],"default"]
+12:T1402,古代已发明了许多酷刑用来处决犯
+人。例如罗马帝国就有两种令人毛骨悚然
+的处人死刑的方式。一就是将人钉在十字
+架上。死囚背了沉重的十字形的木架，在
+兵丁的解押下步向刑场，行刑队员将犯人
+强行按倒在地上，绑住手脚接着粗长锐利
+的铁钉就钉入了死囚的手腕和脚髁。然后
+十字架被猛然竖起，插入事先挖好的洞穴
+中。任犯人的血液一滴滴流干，终至于在
+痛楚中衰竭而死。另一骇人听闻的刑罚是
+将一具死尸绑紧在要处决的犯人背上，当
+尸体腐烂发臭，蛆虫日益蔓生时，也渐次
+将人活生生的烂死。尽管对这两种现已废
+弃的酷刑，我们今天既不愿意听也不愿意
+想﹐又有谁知竟都和我们切身相关呢！
+家有家教，国有国法。天上的上帝，
+人类的创造主给人也有一个基本的法则，
+那就是举世闻名的十诫。为了保障个人的
+自由幸福，家庭的健全快乐，社会的安定
+繁荣，上帝远在人类受造时就赐下了它。
+在古以色列人蒙上帝解救在出埃及往巴勒
+斯坦去的路上，上帝再次庄严清楚地宣布
+了这人类的基本法。这十诫依次是﹕
+1. 只信独一的真活神。
+2. 不可拜偶像。
+3. 不可妄称上帝的名。
+4. 当记念安息日并守为圣日。
+5. 当孝敬父母。
+6. 不可杀人。
+7. 不可奸淫。
+8. 不可偷盗。
+9. 不可作假见证陷害人。
+10. 不可起贪心。
+十诫既有积极的要求又有消极的禁
+止，它既是一道爱上帝也是爱人的法令—
+前四条确定了敬拜的对象为独一无二，敬
+拜的方式要用心灵和诚实，敬拜的态度须
+恭敬亲切，以及为大众特定的敬拜时间是
+安息日（即星期六，而不是传统的星期天）；
+而后六条是对他人的本份，包括了对父母，
+夫妻，子女，朋友，邻居，及上司下属的
+操守职责。它由向神之心而发，贯穿人和
+上帝，人与人的正常生活关系，最后复归
+人心的谨守。
+遗憾的是根据圣经的记载，从人类的
+始祖亚当，夏娃开始就违背了兼具爱神爱
+人之总纲的十诫，直到今日二十一世纪虽
+然物质文明似乎愈来愈高，但明显的在人
+类道德领域上却江河日下。犯罪现象充斥
+社会各阴暗角落，也渗入家庭范围，及人
+际关系中。至于人对上帝的态度和表现，
+及各人内心的景况就更不用多讲了。
+如果我们是一个诚实及还有一些自知
+之明的人，如果我们也还关心和了解一点
+人群，家庭，社会的话，想来都不会否认
+罪恶的普遍存在及看到它的严重危害。正
+如圣经所宣告的，无论从积极和消极的标
+准看，从内心和行为来衡量我们“世人都
+犯了罪”，而“罪的工价就是死”—它无
+情地带来人肉体和心灵道德，直接和间接
+的死亡。
+固然有些人对罪不以为然，执迷不
+悟，自甘沉沦，但也确有更多的人希望求
+生及渴欲摆脱罪的束缚。不幸人类的经验
+和现实正如圣经中一位作者，保罗所描述
+的﹕“立志为善由得我，只是行出来由不联系人：电话：电邮：地址：
+得我”“我所愿意的善，我反不做，我所
+不愿意的恶，我倒去做”“我觉得肢体中
+另有个律和我心中的律交战。把我掳去，
+叫我附从那肢体中犯罪的律。我真是苦
+啊！谁能救我脱离这取死的身体呢？”（罗
+7:18-19;23-24）保罗想到个人的罪，一
+度就好像那绑在犯人身上的那具尸体那样
+可怕及令他痛苦！自己纵想得以解脱，但
+就是不能！人类真的就没有希望了吗？面
+对上帝给人的十诫，也是有一天要以它为
+标准来审判人的律法，人只得就此接受它
+的定罪及束手待毙吗？
+不！同一位保罗紧接着他痛苦的呼
+声，发出了胜利的吶喊，他说﹕“感谢
+上帝，靠着我们的主耶稣基督就能脱离
+了！”二千年前上帝的圣子，人类的救主，
+罪人的益友良师，耶稣基督来到世上，
+以无罪之身为我们成为罪，并甘心替人
+类死在惨痛的十字架上，以此宣告说﹕
+“上帝爱世人，甚至将他的独生子赐给他
+们，叫一切信他的，不至灭亡，反得永生”（约3:16）
+十诫令我们知道上帝的圣洁和自己的
+有罪而无力，十架却让我们看到基督的不
+可思议的牺牲和救赎人类的大工告成，当
+然“双十”更彰显上帝无比的公义和慈爱。
+今天我们只要来到主耶稣面前记住这“双
+十”，相信他的救赎，接受他做你个人的
+救主，认罪悔改得以重生，这样，我们从
+此就不再是罪奴和死囚，而是上帝的儿女，
+耶稣的弟兄，天国的子民了！
+请祷告﹕“主耶稣基督，我愿来就你，
+求你接纳我，赦免我的罪，做我的救主，
+引我一生的路，阿们！（即诚心所愿之意）
+你若有兴趣对圣经和信仰作进一部的探讨﹐请写信:
+香港邮政总局信箱310 号望潮 收6:["$","$L11",null,{"course":{"id":"fuyin-18","title":"双十纪念","subtitle":"福音单张 · 第18张","source":"福音单张","totalLessons":1,"category":"福音","lessons":[{"number":1,"id":"lesson-1","title":"双十纪念","goal":null,"extra":null,"memoryVerse":null,"sections":[{"heading":"","text":"$12"}],"discussion":[],"quiz":[{"label":"阅读理解·选择题","type":"choice","questions":["古代已发明了许多酷刑用来处决（　　）。","例如（　　）就有两种令人毛骨悚然的处人死刑的方式。","一就是将人钉在（　　）上。","死囚背了沉重的（　　）的木架，在兵丁的解押下步向刑场，行刑队员将犯人强行按倒在地上，绑住手脚接着粗长锐利的铁钉就钉入了死囚的手腕和脚髁。","然后（　　）被猛然竖起，插入事先挖好的洞穴中。","任（　　）的血液一滴滴流干，终至于在痛楚中衰竭而死。","另一骇人听闻的刑罚是将一具死尸绑紧在要处决的犯人背上，当尸体腐烂发臭，蛆虫日益蔓生时，也渐次将人（　　）的烂死。","尽管对这两种现已废弃的（　　），我们今天既不愿意听也不愿意想﹐又有谁知竟都和我们切身相关呢！","家有家教，（　　）。","为了保障（　　）的自由幸福，家庭的健全快乐，社会的安定繁荣，上帝远在人类受造时就赐下了它。"],"options":[["犯人","巴勒斯坦","安息日","罗马帝国"],["巴勒斯坦","安息日","基本法","罗马帝国"],["安息日","罗马帝国","十字架","巴勒斯坦"],["安息日","罗马帝国","十字形","巴勒斯坦"],["十字架","巴勒斯坦","安息日","罗马帝国"],["犯人","巴勒斯坦","安息日","罗马帝国"],["活生生","安息日","巴勒斯坦","罗马帝国"],["罗马帝国","酷刑","巴勒斯坦","安息日"],["国有国法","巴勒斯坦","安息日","罗马帝国"],["安息日","个人","巴勒斯坦","罗马帝国"]],"answers":["犯人","罗马帝国","十字架","十字形","十字架","犯人","活生生","酷刑","国有国法","个人"]}],"audio":{}}]},"lesson":"$6:props:course:lessons:0","prev":null,"next":null}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#2f6b5e"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"小组互动课程"}],["$","meta","1",{"name":"description","content":"成人小组互动查经课程 · 音频播放 · 问答测试"}],["$","link","2",{"rel":"manifest","href":"/xzkc/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","4",{"name":"apple-mobile-web-app-title","content":"小组课程"}],["$","meta","5",{"name":"apple-mobile-web-app-status-bar-style","content":"default"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"

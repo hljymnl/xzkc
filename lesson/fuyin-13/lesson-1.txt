@@ -1,0 +1,126 @@
+1:"$Sreact.fragment"
+2:I[8573,[],""]
+3:I[457,[],""]
+4:I[6535,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+5:I[6863,["177","static/chunks/app/layout-2dac372b4167b0a2.js"],"default"]
+7:I[5616,[],"OutletBoundary"]
+9:I[2729,[],"AsyncMetadataOutlet"]
+b:I[5616,[],"ViewportBoundary"]
+d:I[5616,[],"MetadataBoundary"]
+e:"$Sreact.suspense"
+10:I[8255,[],""]
+:HL["/xzkc/_next/static/css/1b7ff2dfb262e6af.css","style"]
+0:{"P":null,"b":"ktPVmYSFcj8T37CuiE8PN","p":"/xzkc","c":["","lesson","fuyin-13","lesson-1"],"i":false,"f":[[["",{"children":["lesson",{"children":[["slug","fuyin-13","d"],{"children":[["lessonId","lesson-1","d"],{"children":["__PAGE__",{}]}]}]}]},"$undefined","$undefined",true],["",["$","$1","c",{"children":[[["$","link","0",{"rel":"stylesheet","href":"/xzkc/_next/static/css/1b7ff2dfb262e6af.css","precedence":"next","crossOrigin":"$undefined","nonce":"$undefined"}]],["$","html",null,{"lang":"zh-CN","children":[["$","head",null,{"children":[["$","link",null,{"rel":"icon","href":"/xzkc/icons/icon-192.png"}],["$","link",null,{"rel":"apple-touch-icon","href":"/xzkc/icons/icon-192.png"}],["$","meta",null,{"name":"theme-color","content":"#2f6b5e"}]]}],["$","body",null,{"children":[["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":[[["$","title",null,{"children":"404: This page could not be found."}],["$","div",null,{"style":{"fontFamily":"system-ui,\"Segoe UI\",Roboto,Helvetica,Arial,sans-serif,\"Apple Color Emoji\",\"Segoe UI Emoji\"","height":"100vh","textAlign":"center","display":"flex","flexDirection":"column","alignItems":"center","justifyContent":"center"},"children":["$","div",null,{"children":[["$","style",null,{"dangerouslySetInnerHTML":{"__html":"body{color:#000;background:#fff;margin:0}.next-error-h1{border-right:1px solid rgba(0,0,0,.3)}@media (prefers-color-scheme:dark){body{color:#fff;background:#000}.next-error-h1{border-right:1px solid rgba(255,255,255,.3)}}"}}],["$","h1",null,{"className":"next-error-h1","style":{"display":"inline-block","margin":"0 20px 0 0","padding":"0 23px 0 0","fontSize":24,"fontWeight":500,"verticalAlign":"top","lineHeight":"49px"},"children":404}],["$","div",null,{"style":{"display":"inline-block"},"children":["$","h2",null,{"style":{"fontSize":14,"fontWeight":400,"lineHeight":"49px","margin":0},"children":"This page could not be found."}]}]]}]}]],[]],"forbidden":"$undefined","unauthorized":"$undefined"}],["$","$L4",null,{}],["$","$L5",null,{}]]}]]}]]}],{"children":["lesson",["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["slug","fuyin-13","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":[["lessonId","lesson-1","d"],["$","$1","c",{"children":[null,["$","$L2",null,{"parallelRouterKey":"children","error":"$undefined","errorStyles":"$undefined","errorScripts":"$undefined","template":["$","$L3",null,{}],"templateStyles":"$undefined","templateScripts":"$undefined","notFound":"$undefined","forbidden":"$undefined","unauthorized":"$undefined"}]]}],{"children":["__PAGE__",["$","$1","c",{"children":["$L6",null,["$","$L7",null,{"children":["$L8",["$","$L9",null,{"promise":"$@a"}]]}]]}],{},null,false]},null,false]},null,false]},null,false]},null,false],["$","$1","h",{"children":[null,[["$","$Lb",null,{"children":"$Lc"}],null],["$","$Ld",null,{"children":["$","div",null,{"hidden":true,"children":["$","$e",null,{"fallback":null,"children":"$Lf"}]}]}]]}],false]],"m":"$undefined","G":["$10",[]],"s":false,"S":true}
+11:I[9561,["424","static/chunks/424-26d7038c52a95b75.js","441","static/chunks/app/lesson/%5Bslug%5D/%5BlessonId%5D/page-67e353bcb357bac5.js"],"default"]
+12:T174b,你若问一位五﹐六年级的小学生。「一
+天﹐一月﹐一年怎么计算﹐从那儿来的啊?」
+他( 她) 准会回答说﹐「这很简单﹐地球自
+转一周就是一天﹐而月亮—地球的卫星绕
+地球一转就是一个月﹐而一年呢! 就是地
+球围绕太阳兜一圈的时间啰!」这样的答案无疑可以得到一百分!
+可是如果你再问「一周七天又如何计
+算﹐根据什么? 又从何时开始呢?」不要
+说它将难倒小学生﹐中学生恐怕连许多大学生也不能回答了!
+一周的计算并不根据天文学上所知的
+月亮﹐地球和太阳的运动。( 尽管古代也
+就有日﹐月﹐金﹐木﹐水﹐火﹐土的七个
+次序﹐即以一个星球代表一天﹐七天合成
+一周。日本人也用七曜日﹐中国古代的周
+易( 易经) 就提到「七日来复」而历史悠
+久的古巴比伦人: 虽然创设了六进制( 一
+分六十秒﹐一小时六十分等度量衡的单位)
+但在计日时也是以七天为一周﹐那么﹐这
+种既在久远历史上就被广泛采用﹐又不像
+日﹐月﹐年有天文学依据的制度起源于何时何地呢?
+只能在已有三千五百年历史的圣经创
+世记中可以找到唯一的答案。创1-2 章中
+说上帝六日创造天地﹐「上帝看着一切所
+造的都甚好﹐有晚上﹐有早晨﹐是第六日﹐
+天地万物都造齐了﹐到第七日﹐上帝造物
+的工已经完毕﹐就在第七日歇了他一切的
+工﹐安息了﹐上帝赐福给第七日﹐定为圣
+日﹐因为在这日﹐上帝歇了他一切创造的
+工﹐就安息了。( 创1:31-2:3) 上帝六天
+工作创造天地﹐第七天安息。这就形成七
+天一周﹐在上帝赐给人的十诫的第四条中
+也是这样吩咐说:「当记念安息日, 守为
+圣日。六日要劳碌做你一切的工, 但第七
+日是向耶和华—你上帝当守的安息日…..
+因为六日之内, 耶和华造天, 地, 海, 和
+其中的万物, 第七日便安息, 所以耶和华
+赐福与安息日定为圣日」( 出埃及记20:5-
+11) 七日一周的来源和奉行就是这么简单
+清楚﹐明了。
+权威的英国格林威治皇家天文台﹐也
+就是记录全球准确时间的机构﹐应一位圣
+经学者的要求﹐他们的新闻发布官特卡在
+1974 年作过以下的答复:「周循环制( 即
+每周七天制)﹐渊源于早期犹太教﹐延续迄
+今﹐从未变更。」
+如果再进一步问﹐一周的第七天是我
+们今天说惯的星期几或礼拜几呢? 它是星
+期六﹐而不是有些人误以为的星期天。它
+除了为古今亿万的基督徒所公认。你翻看
+任何一本字典﹐在「星期六」这一条文下﹐
+你看见的答案一定像著名的韦氏标准字典
+所说的那样「星期六是一周的第七日」﹐
+而且上述同一封回信中也提到「我们肯定
+「周制」未曾有过任何调整。从西历改变
+到格列高里历(1582-1827) 均没有影响到
+「周」制的次序。
+有意义的是在历史上曾经有更改七日
+一周的企图和法令﹐如18 世纪末法国大
+革命﹐ 崇尚无神主义及敬拜理智女神时改
+七日一周为十日一周。二十世纪俄国革命
+后﹐一度想改为五日一周﹐虽都靠政权的
+势力来推行﹐但只是「胎死腹中」就成了「短
+命鬼」﹐都行不通。今天世界各处仍以七
+日为一周﹐( 尽管「七」在数学上不是一个
+容易运算的数字) 据近代生物﹐生理学家
+更发现了人体「七日」的周期和第七天休息的重大意义呢!
+此外﹐有兴趣的是在全世界一百多
+种语言中又肯定了星期六是安息日( 第七
+日)﹐如西班牙、葡萄牙、俄语、阿拉伯语﹐
+当然不用说新旧约圣经所用的希伯来﹐希
+腊语了。联系人：电话：电邮：地址：
+到此为止对七日一周我们可说在一定
+程度上已知其然及其所以然﹐但上帝既不
+会劳累乏力﹐为什么给人留下七天一周制﹐
+而又要人在第七日( 星期六) 守为安息日
+呢? 当我们进一步认识及了解上帝所启示
+的圣经﹐我们就会多么欣慰兴奋及激起我
+们对仁慈上帝安排的应有反应了!
+七天一周制和安息日的制度让我们知
+道我们是有根的﹐我们是源自上帝的创造﹐而且人是按尊贵圣洁的形象所造的﹐生
+命是尊严的﹐有价值的﹐也是享有天赋人
+权及男女应是平等的。人兼有安全和归属
+的﹐且是被上帝所爱﹐也要去爱上帝和
+所造的。人并非来自猿猴的进化结果﹐上帝是创造主﹐人是创造的杰作及最为关
+爱的对象。个体的人很渺小﹐但仍很有价
+值﹐集体的人很伟大﹐但仍是受造之物。
+七日一周﹐及以第七天为安息日令
+人遵守﹐除了让人知道自己的本源﹐更让
+人有劳有逸﹐有工作﹐有休息﹐尤其比之
+身体的休息更为重要的是让人的心灵得安
+息。它在繁忙紧张的二十一世纪多么令人
+响往啊! 主耶稣在世时呼召说:「凡劳苦
+担重担的人可以到我这里来, 我就使你们得安息。」上帝非但按的形像创造了人﹐在人偏离正路﹐犯罪—违背的命令和怀疑
+慈爱的安排及应许时﹐咒诅就临到世
+界﹐人们身心受困﹐被罪和罪的权势所压
+伤更步向死亡。人没有真正的平安可言﹐
+为此上帝更舍己来救赎人类﹐解救人们的
+重担﹐赐人得享安息。
+七日一周﹐第七天守安息日亲近上帝
+敬拜上帝﹐歌颂赞美创造主﹐享受家庭天
+伦之乐﹐ 弟兄姐妹的团契( 朋友的友谊)﹐
+又欣赏赞叹上帝所创造大自然的美丽神
+奇﹐令人身心复苏﹐使人平日作工有力﹐人生充满生机!
+谢谢上帝给我们七日一周制使我们领
+受神恩及天福﹐并生活在世上积极﹐满有
+意义。
+你若有兴趣对圣经和信仰作进一部的探讨﹐请写信:
+香港邮政总局信箱310 号 望潮收6:["$","$L11",null,{"course":{"id":"fuyin-13","title":"七日一周从何而来？","subtitle":"福音单张 · 第13张","source":"福音单张","totalLessons":1,"category":"福音","lessons":[{"number":1,"id":"lesson-1","title":"七日一周从何而来？","goal":null,"extra":null,"memoryVerse":null,"sections":[{"heading":"","text":"$12"}],"discussion":[],"quiz":[{"label":"阅读理解·选择题","type":"choice","questions":["你若问一位五﹐（　　）级的小学生。","(尽管古代也就有日﹐月﹐金﹐木﹐水﹐火﹐土的（　　）次序﹐即以一个星球代表一天﹐七天合成一周。","这就形成（　　）一周﹐在上帝赐给人的十诫的第四条中也是这样吩咐说:「当记念安息日,守为圣日。","」如果再进一步问﹐一周的第（　　）是我们今天说惯的星期几或礼拜几呢?它是星期六﹐而不是有些人误以为的星期天。","它除了为古今亿万的（　　）所公认。","你翻看任何（　　）字典﹐在「星期六」这一条文下﹐你看见的答案一定像著名的韦氏标准字典所说的那样「星期六是一周的第七日」﹐而且上述同一封回信中也提到「我们肯定「周制」未曾有过任何调整。","从西历改变到（　　）(1582-1827)均没有影响到「周」制的次序。","有意义的是在历史上曾经有更改（　　）一周的企图和法令﹐如18世纪末法国大革命﹐崇尚无神主义及敬拜理智女神时改七日一周为十日一周。","二十世纪俄国革命后﹐一度想改为（　　）一周﹐虽都靠政权的势力来推行﹐但只是「胎死腹中」就成了「短命鬼」﹐都行不通。","个体的人很渺小﹐但仍很有（　　）﹐集体的人很伟大﹐但仍是受造之物。"],"options":[["1974年","六日","六年","三千五百年"],["六日","1974年","三千五百年","七个"],["七天","六日","1974年","三千五百年"],["1974年","六日","七天","三千五百年"],["太阳","基督徒","历史","兴趣"],["六日","三千五百年","1974年","一本"],["兴趣","历史","格列高里历","基督徒"],["1974年","六日","七日","三千五百年"],["五日","六日","1974年","三千五百年"],["历史","价值","基督徒","兴趣"]],"answers":["六年","七个","七天","七天","基督徒","一本","格列高里历","七日","五日","价值"]}],"audio":{}}]},"lesson":"$6:props:course:lessons:0","prev":null,"next":null}]
+c:[["$","meta","0",{"charSet":"utf-8"}],["$","meta","1",{"name":"viewport","content":"width=device-width, initial-scale=1, viewport-fit=cover"}],["$","meta","2",{"name":"theme-color","content":"#2f6b5e"}]]
+8:null
+a:{"metadata":[["$","title","0",{"children":"小组互动课程"}],["$","meta","1",{"name":"description","content":"成人小组互动查经课程 · 音频播放 · 问答测试"}],["$","link","2",{"rel":"manifest","href":"/xzkc/manifest.webmanifest","crossOrigin":"$undefined"}],["$","meta","3",{"name":"mobile-web-app-capable","content":"yes"}],["$","meta","4",{"name":"apple-mobile-web-app-title","content":"小组课程"}],["$","meta","5",{"name":"apple-mobile-web-app-status-bar-style","content":"default"}]],"error":null,"digest":"$undefined"}
+f:"$a:metadata"
