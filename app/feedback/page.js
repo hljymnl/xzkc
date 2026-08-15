@@ -1,12 +1,29 @@
 'use client';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
 import Link from 'next/link';
+import { getUserId } from '@/lib/store';
+import { isSyncOn, pullLeaderComments } from '@/lib/sync';
 
-// 学员端：导入组长反馈 JSON，查看组长的回应
+// 学员端：查看组长反馈（自动同步或导入反馈文件）
 export default function FeedbackPage() {
   const [paste, setPaste] = useState('');
   const [data, setData] = useState(null);
   const [msg, setMsg] = useState('');
+
+  // 若开启了自动同步，自动拉取组长回应
+  useEffect(() => {
+    if (!isSyncOn()) return;
+    let stop = false;
+    const load = async () => {
+      const uid = getUserId();
+      if (!uid) return;
+      const comments = await pullLeaderComments(uid);
+      if (!stop && Object.keys(comments).length) setData({ type: 'xz-leader-feedback', comments });
+    };
+    load();
+    const iv = setInterval(load, 8000);
+    return () => { stop = true; clearInterval(iv); };
+  }, []);
 
   const parse = () => {
     try {

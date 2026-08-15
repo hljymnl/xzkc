@@ -1,5 +1,6 @@
 import './globals.css';
 import SWRegister from '@/components/SWRegister';
+import SyncController from '@/components/SyncController';
 import { asset } from '@/lib/base';
 
 export const metadata = {
@@ -25,6 +26,7 @@ export default function RootLayout({ children }) {
         <meta name="theme-color" content="#2f6b5e" />
       </head>
       <body>{children}
+        <SyncController />
         <SWRegister />
       </body>
     </html>

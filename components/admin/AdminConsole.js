@@ -7,6 +7,7 @@ import {
   exportBackup, importBackup, exportFeedback, DEFAULT_PASS,
 } from '@/lib/adminStore';
 import { downloadJson } from '@/lib/report';
+import { getAdminSyncUrl, setAdminSyncUrl, pullAllLearners, pushComment } from '@/lib/sync';
 
 function b64ToUrl(b64, mime) {
   try {
@@ -28,9 +29,44 @@ export default function AdminConsole() {
   const [msg, setMsg] = useState('');
   const fileRef = useRef(null);
   const [newPass, setNewPass] = useState('');
+  // 自动同步
+  const [syncUrl, setSyncUrl] = useState('');
+  const [syncOn, setSyncOn] = useState(false);
+  const [lastSync, setLastSync] = useState('');
 
   const refresh = () => { setLearners(getLearners()); setComments(getComments()); };
   useEffect(() => { if (authed) refresh(); }, [authed]);
+  useEffect(() => { if (authed) setSyncUrl(getAdminSyncUrl()); }, [authed]);
+
+  // 自动拉取：开启后每 5 秒把 Firebase 里的学员数据合并进后台
+  useEffect(() => {
+    if (!authed || !syncOn || !syncUrl) return;
+    let stop = false;
+    const tick = async () => {
+      if (stop) return;
+      const d = await pullAllLearners(syncUrl);
+      if (stop || !d) return;
+      let n = 0;
+      for (const uid in d) if (d[uid] && d[uid].profile) { if (mergeLearnerReport({ ...d[uid], profile: d[uid].profile }).ok) n++; }
+      refresh();
+      setLastSync(new Date().toLocaleTimeString());
+    };
+    tick();
+    const iv = setInterval(tick, 5000);
+    return () => { stop = true; clearInterval(iv); };
+  }, [authed, syncOn, syncUrl]);
+
+  const toggleSync = () => {
+    if (!syncOn) {
+      if (!syncUrl.trim()) { setMsg('请先粘贴 Firebase 数据库地址'); return; }
+      setAdminSyncUrl(syncUrl);
+      setSyncOn(true);
+      setMsg('☁️ 自动同步已开启，正在自动记录学员数据…');
+    } else {
+      setSyncOn(false);
+      setMsg('已暂停自动同步（本地数据保留）');
+    }
+  };
 
   const login = () => {
     if (passInput === getPass()) { setAuthed(true); setMsg(''); }
@@ -160,7 +196,11 @@ export default function AdminConsole() {
                     👨‍🏫 {c.at.slice(0, 10)}：{c.text}
                   </p>
                 ))}
-                <CommentBox onSend={(text) => { addComment(sel.uid, key, text); setComments(getComments()); }} />
+                <CommentBox onSend={(text) => {
+                  addComment(sel.uid, key, text);
+                  setComments(getComments());
+                  if (syncOn && syncUrl) pushComment(syncUrl, sel.uid, key, { text, at: new Date().toISOString() });
+                }} />
               </div>
             </div>
           );
@@ -233,6 +273,24 @@ export default function AdminConsole() {
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap' }}>
           <button className="btn ghost" onClick={() => downloadJson(JSON.parse(exportBackup()), `后台备份-${Date.now()}.json`)}>💾 导出全部备份</button>
           <button className="btn ghost" onClick={() => { const r = importBackup(paste); setMsg(r.ok ? '备份导入成功' : r.msg); refresh(); }}>导入备份</button>
+        </div>
+        <div style={{ marginTop: 14, padding: 12, background: syncOn ? 'var(--accent-soft)' : 'transparent', border: '1px solid var(--line)', borderRadius: 12 }}>
+          <p style={{ margin: '0 0 6px', fontWeight: 700 }}>☁️ 自动记录学员数据</p>
+          <p style={{ margin: '0 0 8px', fontSize: 13, color: 'var(--muted)' }}>
+            粘贴 Firebase 实时数据库地址（如 https://xxx-default-rtdb.firebaseio.com/）后开启，学员的分享与录音会自动汇总到这里，无需手动导入。
+          </p>
+          <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap' }}>
+            <input className="qinput" style={{ flex: 1, minWidth: 220 }} placeholder="Firebase 数据库地址" value={syncUrl}
+              onChange={(e) => setSyncUrl(e.target.value)} disabled={syncOn} />
+            <button className={syncOn ? 'btn ghost' : 'btn'} onClick={toggleSync}>
+              {syncOn ? '⏸ 暂停' : '▶ 开启自动同步'}
+            </button>
+          </div>
+          {syncOn && (
+            <p style={{ margin: '8px 0 0', fontSize: 13, color: 'var(--ok)' }}>
+              ✅ 正在自动记录 · 最近更新 {lastSync || '—'} · 学员 {learners.length} 人
+            </p>
+          )}
         </div>
         <div style={{ display: 'flex', gap: 10, marginTop: 14, alignItems: 'center', flexWrap: 'wrap' }}>
           <span style={{ fontSize: 14 }}>修改密码：</span>

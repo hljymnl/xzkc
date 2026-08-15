@@ -3,6 +3,7 @@ import { useEffect, useState } from 'react';
 import Link from 'next/link';
 import { getUserId, setUserId, getKnownIds } from '@/lib/store';
 import { buildLearnerReport, downloadJson } from '@/lib/report';
+import { getSyncUrl, setSyncUrl, isSyncOn, pushLearner } from '@/lib/sync';
 
 export default function UserBar({ compact }) {
   const [uid, setUid] = useState('');
@@ -24,6 +25,20 @@ export default function UserBar({ compact }) {
     if (input.trim()) setUserId(input);
     setEditing(false);
     setInput('');
+  };
+
+  // 自动同步设置
+  const [syncUrl, setSyncUrlState] = useState(getSyncUrl());
+  const [syncOpen, setSyncOpen] = useState(false);
+  const [syncMsg, setSyncMsg] = useState('');
+  const saveSync = async () => {
+    setSyncUrl(syncUrl.trim());
+    setSyncMsg(syncUrl.trim() ? '☁️ 已开启自动同步：分享/录音会自动上传给组长' : '已关闭自动同步');
+    if (syncUrl.trim() && uid) {
+      const ok = await pushLearner(uid);
+      if (ok) setSyncMsg('☁️ 已开启自动同步，并已上传当前记录');
+    }
+    setTimeout(() => setSyncMsg(''), 4000);
   };
 
   // 上报学习记录给组长
@@ -81,7 +96,25 @@ export default function UserBar({ compact }) {
         </button>
         <Link href="/feedback"><button className="btn ghost" style={{ padding: '8px 12px', fontSize: 14 }}>💌 组长反馈</button></Link>
         <Link href="/admin"><button className="btn ghost" style={{ padding: '8px 12px', fontSize: 14 }}>🔧 管理后台</button></Link>
+        <button className="btn ghost" style={{ padding: '8px 12px', fontSize: 14, color: isSyncOn() ? 'var(--ok)' : 'inherit' }}
+          onClick={() => setSyncOpen(!syncOpen)}>
+          {isSyncOn() ? '☁️ 已同步' : '☁️ 同步设置'}
+        </button>
       </div>
+
+      {syncOpen && (
+        <div style={{ marginTop: 12, padding: '12px 14px', background: 'var(--accent-soft)', borderRadius: 12 }}>
+          <p style={{ margin: '0 0 6px', fontSize: 13.5, color: '#7a5f17' }}>
+            粘贴组长给你的「同步地址」（组长在后台「自动记录」里配置），之后你的读书分享与语音留言会自动上传给组长，组长回应也会自动同步给你。
+          </p>
+          <div style={{ display: 'flex', gap: 8 }}>
+            <input className="qinput" style={{ flex: 1, fontSize: 13 }} placeholder="Firebase 数据库地址" value={syncUrl}
+              onChange={(e) => setSyncUrlState(e.target.value)} />
+            <button className="btn" style={{ padding: '8px 14px', fontSize: 14 }} onClick={saveSync}>保存</button>
+          </div>
+          {syncMsg && <p style={{ margin: '8px 0 0', fontSize: 13, color: 'var(--ok)' }}>{syncMsg}</p>}
+        </div>
+      )}
 
       {report && (
         <div style={{ marginTop: 12, padding: '12px 14px', background: 'var(--accent-soft)', borderRadius: 12 }}>
