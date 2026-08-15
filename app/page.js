@@ -3,13 +3,13 @@ import { listCourses } from '@/lib/courses';
 import UserBar from '@/components/UserBar';
 import ChallengeCard from '@/components/ChallengeCard';
 
-const CAT_ICONS = { '小组事工': '👥', '查经课程': '📖', '人物研经': '👤', '健康生活': '🌿', '其他': '📚' };
+const CAT_ICONS = { '小组事工': '👥', '圣经如此说': '📜', '查经课程': '📖', '人物研经': '👤', '健康生活': '🌿', '其他': '📚' };
 
 export default function Home() {
   const courses = listCourses();
   const grouped = {};
   for (const c of courses) (grouped[c.category] = grouped[c.category] || []).push(c);
-  const order = ['小组事工', '查经课程', '人物研经', '健康生活', '其他'];
+  const order = ['小组事工', '圣经如此说', '查经课程', '人物研经', '健康生活', '其他'];
   return (
     <div className="container">
       <div className="page-head">
