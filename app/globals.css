@@ -158,3 +158,12 @@ button { font-family: inherit; cursor: pointer; }
   .lesson-grid .card { margin: 0; }
   .segment-text { font-size: 18px; }
 }
+
+/* 朗读模式（无音频课程） */
+.read-line { cursor: pointer; border-radius: 8px; transition: background .25s; }
+.read-line:hover { background: rgba(200,162,74,.10); }
+.read-line.active { background: var(--accent-soft); }
+
+/* 读书分享区 */
+.share-title { margin: 30px 0 6px; font-size: 21px; }
+.share-count { font-weight: 700; color: var(--primary-dark); }

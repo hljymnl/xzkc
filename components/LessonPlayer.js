@@ -2,6 +2,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react';
 import Link from 'next/link';
 import QuizSection from './QuizSection';
+import SharingSection from './SharingSection';
 import { asset } from '@/lib/base';
 import { getCourseState, saveCourseState, getLessonPlayed, saveLessonPlayed, getUserId, recordLessonDone, recordSegmentPlayed } from '@/lib/store';
 
@@ -10,13 +11,26 @@ const SPEEDS = [1, 1.25, 1.5, 0.75];
 export default function LessonPlayer({ course, lesson, prev, next }) {
   const slug = course.id;
   const lessonId = lesson.id;
-  const audioManifest = lesson.audio || { segments: [], memoryAudio: null };
+  const audioManifest = (lesson.audio && Array.isArray(lesson.audio.segments)) ? lesson.audio : { segments: [], memoryAudio: null };
 
   // 可播放段落 = type=text 且有音频
   const playables = useMemo(
     () => audioManifest.segments.filter((s) => s.type === 'text' && s.audio),
     [audioManifest]
   );
+  const hasAudio = playables.length > 0;
+
+  // 无音频时：从课文生成朗读单元（标题 + 每一行）
+  const readUnits = useMemo(() => {
+    if (hasAudio) return [];
+    const units = [];
+    (lesson.sections || []).forEach((sec, si) => {
+      if (sec.heading) units.push({ key: `h-${si}`, text: sec.heading, isHeading: true, section: si });
+      const lines = (sec.text || '').split('\n').map((s) => s.trim()).filter(Boolean);
+      lines.forEach((ln, li) => units.push({ key: `s-${si}-${li}`, text: ln, isHeading: false, section: si }));
+    });
+    return units;
+  }, [hasAudio, lesson.sections]);
 
   const [segIdx, setSegIdx] = useState(0);
   const [playing, setPlaying] = useState(false);
@@ -24,6 +38,9 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
   const [progress, setProgress] = useState(0);
   const [played, setPlayed] = useState([]);
   const [done, setDone] = useState(false);
+  // 朗读模式（无音频课程）
+  const [readIdx, setReadIdx] = useState(0);
+  const [reading, setReading] = useState(false);
   const audioRef = useRef(null);
   const segRefs = useRef({});
 
@@ -145,7 +162,7 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
 
   // Media Session（锁屏控制 + 后台播放）
   useEffect(() => {
-    if (!('mediaSession' in navigator)) return;
+    if (!('mediaSession' in navigator) || !hasAudio) return;
     const title = `第${lesson.number}课 ${lesson.title}`;
     navigator.mediaSession.metadata = new MediaMetadata({ title, artist: course.title, album: course.title });
     navigator.mediaSession.setActionHandler('play', () => toggle());
@@ -160,10 +177,53 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
         navigator.mediaSession.setActionHandler('nexttrack', null);
       } catch {}
     };
-  }, [lesson, course, toggle, prevSeg, nextSeg]);
+  }, [lesson, course, toggle, prevSeg, nextSeg, hasAudio]);
 
-  // 渲染：按小节分组显示文字
+  // ---------- 朗读（speechSynthesis，无音频课程也能“听”） ----------
+  const cancelSpeech = useCallback(() => {
+    try { window.speechSynthesis && window.speechSynthesis.cancel(); } catch {}
+  }, []);
+
+  const speakUnit = useCallback((idx, seq) => {
+    const u = readUnits[idx];
+    if (!u || typeof window === 'undefined' || !('speechSynthesis' in window)) return;
+    cancelSpeech();
+    setReadIdx(idx);
+    setReading(seq !== false);
+    const utter = new SpeechSynthesisUtterance(u.isHeading ? u.text : u.text);
+    utter.lang = 'zh-CN';
+    utter.rate = 0.95;
+    utter.onend = () => {
+      if (seq && idx + 1 < readUnits.length) speakUnit(idx + 1, seq);
+      else if (seq) { setReading(false); markDone(); }
+    };
+    utter.onerror = () => setReading(false);
+    window.speechSynthesis.speak(utter);
+  }, [readUnits, cancelSpeech, markDone]);
+
+  const toggleRead = useCallback(() => {
+    if (reading) {
+      cancelSpeech();
+      setReading(false);
+    } else {
+      speakUnit(readIdx >= readUnits.length ? 0 : readIdx, true);
+    }
+  }, [reading, readIdx, readUnits.length, speakUnit, cancelSpeech]);
+
+  const nextRead = useCallback(() => {
+    if (readIdx + 1 < readUnits.length) speakUnit(readIdx + 1, reading);
+  }, [readIdx, readUnits.length, speakUnit, reading]);
+
+  const prevRead = useCallback(() => {
+    if (readIdx > 0) speakUnit(readIdx - 1, reading);
+  }, [readIdx, speakUnit, reading]);
+
+  // 离开页面停止朗读
+  useEffect(() => () => cancelSpeech(), [cancelSpeech]);
+
+  // 渲染：有音频时按音频段落分组；否则按课文朗读单元
   const renderSegments = () => {
+    if (!hasAudio) return null;
     const groups = [];
     let lastSection = -1;
     audioManifest.segments.forEach((seg, i) => {
@@ -200,10 +260,10 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
         </div>
 
         {/* 存心节 */}
-        {lesson.memory && (
+        {(lesson.memory || lesson.memoryVerse) && (
           <div className="memory-card">
             <div className="tag">★ 存心节</div>
-            <div className="verse">{lesson.memory}</div>
+            <div className="verse">{lesson.memory || lesson.memoryVerse}</div>
             {audioManifest.memoryAudio && (
               <button className="btn" style={{ background: 'rgba(255,255,255,.15)', marginTop: 6 }}
                 onClick={() => {
@@ -217,38 +277,80 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
                 ▶ 听存心节
               </button>
             )}
+            {!audioManifest.memoryAudio && (
+              <button className="btn" style={{ background: 'rgba(255,255,255,.15)', marginTop: 6 }}
+                onClick={() => {
+                  const txt = lesson.memory || lesson.memoryVerse;
+                  if (typeof window !== 'undefined' && 'speechSynthesis' in window && txt) {
+                    cancelSpeech();
+                    const u = new SpeechSynthesisUtterance(txt);
+                    u.lang = 'zh-CN'; u.rate = 0.95;
+                    window.speechSynthesis.speak(u);
+                  }
+                }}>
+                🔊 读存心节
+              </button>
+            )}
           </div>
         )}
 
-        {/* 正文 */}
-        <div className="segment-text">
-          {groups.map((g, i) => {
-            if (g.kind === 'heading') {
+        {/* 正文：有音频 → 音频段落；无音频 → 朗读单元 */}
+        {hasAudio ? (
+          <div className="segment-text">
+            {groups.map((g, i) => {
+              if (g.kind === 'heading') {
+                return (
+                  <div key={`h-${i}`} className="section-head">
+                    <span className="bar" /><h2>{g.text}</h2>
+                  </div>
+                );
+              }
+              const isActive = g.segIndex === segIdx && playing;
+              const wasPlayed = played.includes(g.segIndex);
               return (
-                <div key={`h-${i}`} className="section-head">
-                  <span className="bar" /><h2>{g.text}</h2>
-                </div>
+                <span key={`s-${i}`}
+                  ref={(el) => { segRefs.current[`seg-${g.segIndex}`] = el; }}
+                  className={`seg ${isActive ? 'active' : ''} ${!isActive && wasPlayed ? 'played' : ''}`}
+                  onClick={() => playSegment(g.segIndex, true)}>
+                  {g.text}
+                </span>
               );
-            }
-            const isActive = g.segIndex === segIdx && playing;
-            const wasPlayed = played.includes(g.segIndex);
-            return (
-              <span key={`s-${i}`}
-                ref={(el) => { segRefs.current[`seg-${g.segIndex}`] = el; }}
-                className={`seg ${isActive ? 'active' : ''} ${!isActive && wasPlayed ? 'played' : ''}`}
-                onClick={() => playSegment(g.segIndex, true)}>
-                {g.text}
-              </span>
-            );
-          })}
-        </div>
+            })}
+          </div>
+        ) : (
+          <div className="segment-text">
+            <p className="quiz-intro" style={{ marginTop: 12 }}>
+              📖 本课为读书分享课，点任意一行可单句朗读；按下方 🔊 可连续朗读全课。
+            </p>
+            {readUnits.map((u, i) => {
+              if (u.isHeading) {
+                return (
+                  <div key={u.key} className="section-head">
+                    <span className="bar" /><h2>{u.text}</h2>
+                  </div>
+                );
+              }
+              const isActive = reading && readIdx === i;
+              return (
+                <p key={u.key}
+                  className={`seg read-line ${isActive ? 'active' : ''}`}
+                  onClick={() => speakUnit(i, false)}
+                  style={{ margin: '6px 0', padding: '4px 6px', cursor: 'pointer' }}>
+                  {u.text}
+                </p>
+              );
+            })}
+          </div>
+        )}
 
         {/* 本课进度 */}
         <div className="card card-pad" style={{ marginTop: 20, textAlign: 'center' }}>
           {done ? (
             <p style={{ color: 'var(--ok)', fontWeight: 700, margin: 0 }}>🎉 本课已完成</p>
           ) : (
-            <p style={{ margin: '0 0 8px', color: 'var(--muted)', fontSize: 14 }}>已听 {played.length}/{playables.length} 段 · {pct}%</p>
+            <p style={{ margin: '0 0 8px', color: 'var(--muted)', fontSize: 14 }}>
+              {hasAudio ? `已听 ${played.length}/${playables.length} 段 · ${pct}%` : '读完全课并完成测验后，可标记完成'}
+            </p>
           )}
           {!done && (
             <button className="btn ghost block" onClick={markDone}>标记本课完成</button>
@@ -257,6 +359,9 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
 
         {/* 测验 */}
         <QuizSection slug={slug} lessonId={lessonId} quiz={lesson.quiz || []} />
+
+        {/* 读书分享（讨论题 + 语音留言） */}
+        <SharingSection course={course} lesson={lesson} />
 
         {/* 上下课导航 */}
         <div style={{ display: 'flex', gap: 10, marginTop: 18 }}>
@@ -273,32 +378,49 @@ export default function LessonPlayer({ course, lesson, prev, next }) {
         </div>
       </div>
 
-      {/* 固定底部播放器 */}
-      <div className="player">
-        <div className="player-inner">
-          <div className="player-progress"
-            onClick={(e) => {
-              const a = audioRef.current;
-              if (!a || !a.duration) return;
-              const r = e.currentTarget.getBoundingClientRect();
-              a.currentTime = ((e.clientX - r.left) / r.width) * a.duration;
-            }}>
-            <i style={{ width: `${progress * 100}%` }} />
-          </div>
-          <div className="player-controls">
-            <button className="pc-btn small" onClick={() => { setSpeed((s) => SPEEDS[(SPEEDS.indexOf(s) + 1) % SPEEDS.length]); }}>
-              {speed}×
-            </button>
-            <button className="pc-btn" onClick={prevSeg}>⏮</button>
-            <button className="pc-btn play" onClick={toggle}>{playing ? '⏸' : '▶'}</button>
-            <button className="pc-btn" onClick={nextSeg}>⏭</button>
-            <button className="pc-btn small" onClick={markDone}>✓</button>
-          </div>
-          <div className="player-label">
-            {current ? `${segIdx + 1} / ${playables.length} · ${lesson.title}` : '点击正文开始播放'}
+      {/* 固定底部：有音频 → 播放器；无音频 → 朗读器 */}
+      {hasAudio ? (
+        <div className="player">
+          <div className="player-inner">
+            <div className="player-progress"
+              onClick={(e) => {
+                const a = audioRef.current;
+                if (!a || !a.duration) return;
+                const r = e.currentTarget.getBoundingClientRect();
+                a.currentTime = ((e.clientX - r.left) / r.width) * a.duration;
+              }}>
+              <i style={{ width: `${progress * 100}%` }} />
+            </div>
+            <div className="player-controls">
+              <button className="pc-btn small" onClick={() => { setSpeed((s) => SPEEDS[(SPEEDS.indexOf(s) + 1) % SPEEDS.length]); }}>
+                {speed}×
+              </button>
+              <button className="pc-btn" onClick={prevSeg}>⏮</button>
+              <button className="pc-btn play" onClick={toggle}>{playing ? '⏸' : '▶'}</button>
+              <button className="pc-btn" onClick={nextSeg}>⏭</button>
+              <button className="pc-btn small" onClick={markDone}>✓</button>
+            </div>
+            <div className="player-label">
+              {current ? `${segIdx + 1} / ${playables.length} · ${lesson.title}` : '点击正文开始播放'}
+            </div>
           </div>
         </div>
-      </div>
+      ) : (
+        <div className="player">
+          <div className="player-inner">
+            <div className="player-controls">
+              <button className="pc-btn" onClick={prevRead}>⏮</button>
+              <button className="pc-btn play" onClick={toggleRead}>{reading ? '⏸' : '🔊'}</button>
+              <button className="pc-btn" onClick={nextRead}>⏭</button>
+            </div>
+            <div className="player-label">
+              {reading
+                ? `朗读中 ${Math.min(readIdx + 1, readUnits.length)} / ${readUnits.length}`
+                : '🔊 点击播放，听本课语音（无需下载）'}
+            </div>
+          </div>
+        </div>
+      )}
     </div>
   );
 }

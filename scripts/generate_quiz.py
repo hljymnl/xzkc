@@ -16,6 +16,7 @@ STOP = {'上帝','耶稣','圣经','我们','他们','你们','自己','一个',
 def clean_text(text):
     text = FOOTER_RE.sub('', text)
     text = re.sub(r'\(cid:\d+\)', '', text)
+    text = '\n'.join(l.lstrip('·• ').strip() for l in text.split('\n'))
     text = re.sub(r'\s+', '', text)
     # 清理常见残渣：孤立的引用括号、杂音字
     text = re.sub(r'[（(][^）)]{0,4}[)）]', '', text)
@@ -24,7 +25,15 @@ def clean_text(text):
 
 def sentences(text):
     t = clean_text(text)
-    return [s.strip() for s in SENT_RE.findall(t) if 10 <= len(s.strip()) <= 90]
+    out = []
+    for s in SENT_RE.findall(t):
+        s = s.strip()
+        if not (10 <= len(s) <= 90): continue
+        # 跳过含书名号或经文标注的句子（挖空容易挖进专名，题质差）
+        if '《' in s or re.search(r'[（(][^）)]*\d+\s*[:：]\s*\d+[^）)]*[)）]', s):
+            continue
+        out.append(s)
+    return out
 
 COMMON = {'时候','地方','事情','东西','问题','方法','方式','原因','结果','世界','生命','生活','人类','人们','国家','教会','信徒','圣经','上帝','耶稣','基督','门徒','先知','使徒','百姓','弟兄','姐妹','日子','年间','面前','身上','心中','里面','之间','之中','天上','地上','未来','过去','现在','一切','所有','许多','一些','一个','一位','一句','一章'}
 def nouns_of(text):

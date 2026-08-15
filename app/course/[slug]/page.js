@@ -37,7 +37,7 @@ export default async function CoursePage({ params }) {
           </Link>
         ))}
       </div>
-      <p className="hint">课程内容源自「希望之声」圣经函授学校，仅供小组学习使用。</p>
+      <p className="hint">课程内容仅供教会小组学习使用。原创教材版权归原作者所有。</p>
     </div>
   );
 }
