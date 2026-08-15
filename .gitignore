@@ -8,3 +8,6 @@ out/
 public/audio/
 backup/
 .pnpm-store/
+
+# 用户讲章输出（不入库）
+讲章输出/
