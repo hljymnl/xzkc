@@ -167,3 +167,11 @@ button { font-family: inherit; cursor: pointer; }
 /* 读书分享区 */
 .share-title { margin: 30px 0 6px; font-size: 21px; }
 .share-count { font-weight: 700; color: var(--primary-dark); }
+
+/* 后台管理 */
+.stat-chip {
+  background: var(--accent-soft); border-radius: 12px; padding: 10px 14px;
+  display: flex; flex-direction: column; align-items: center; min-width: 72px;
+}
+.stat-chip b { font-size: 20px; color: var(--primary-dark); }
+.stat-chip span { font-size: 12px; color: #7a5f17; }

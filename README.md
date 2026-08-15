@@ -70,9 +70,18 @@ cp data/courses/*.json public/courses/
 pnpm build
 ```
 
+## 后台管理（组长端）
+
+- 地址：`https://hljymnl.github.io/xzkc/admin`（默认密码 `xzkc2026`，登录后可修改）
+- **查看学习情况**：导入学员上报后，可看到每位学员的完成课数、答题数、分享数、语音留言数
+- **读书分享**：逐课查看学员的文字分享与语音留言（可在线播放）
+- **组长回应**：对每课分享写回应，导出「组长反馈」文件发给学员；学员在首页点「💌 组长反馈」导入即可看到
+- **学员上报**：学员在首页点「📤 上报我的记录」，把生成的 JSON 发给组长，组长在后台粘贴/上传导入
+- **数据备份**：后台可导出/导入全部数据
+
 ## 部署
 
-- 线上地址：https://lqjymnl2026.github.io/xiaozu-kecheng/
+- 线上地址：https://hljymnl.github.io/xzkc/
 - 脚本：`scripts/deploy_ghpages.sh`（构建 out/ 推送到 gh-pages 分支）
 - 源码仓库不含音频（public/audio 已 gitignore），部署分支含全部音频
 
