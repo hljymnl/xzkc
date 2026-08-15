@@ -24,18 +24,21 @@ export default function Home() {
             <span className="bar" />
             <h2>{CAT_ICONS[cat] || '📚'} {cat}</h2>
           </div>
-          {grouped[cat].map((c) => (
-            <Link key={c.id} href={`/course/${c.id}`}>
-              <div className="card series-card">
-                <div className="series-badge">经</div>
-                <div>
-                  <h3>{c.title}</h3>
-                  <p>{c.subtitle}</p>
+          {grouped[cat].map((c) => {
+            const href = c.totalLessons === 1 ? `/lesson/${c.id}/lesson-1` : `/course/${c.id}`;
+            return (
+              <Link key={c.id} href={href}>
+                <div className="card series-card">
+                  <div className="series-badge">经</div>
+                  <div>
+                    <h3>{c.title}</h3>
+                    <p>{c.subtitle}</p>
+                  </div>
+                  <div className="series-meta">{c.totalLessons === 1 ? '›' : `${c.totalLessons} 课 ›`}</div>
                 </div>
-                <div className="series-meta">{c.totalLessons} 课 ›</div>
-              </div>
-            </Link>
-          ))}
+              </Link>
+            );
+          })}
         </div>
       ))}
       <p className="hint">💡 点击「添加到主屏幕」可像 App 一样使用（支持离线）</p>
